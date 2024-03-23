@@ -6,7 +6,7 @@
   "homepage": "https://liudvikasjakavicius.github.io/habits-tracker",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build",
+    "build": "NODE_ENV=production vite build",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "lint:eslint": "eslint src --fix",
