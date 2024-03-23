@@ -46,7 +46,10 @@ const routes = [
   },
 ]
 
+const routerBase =
+  process.env.NODE_ENV === "production" ? "/habits-tracker/" : "/"
+
 export default createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(routerBase),
   routes,
 })
